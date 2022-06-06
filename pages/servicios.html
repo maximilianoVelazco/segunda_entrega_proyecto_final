@@ -29,7 +29,6 @@
     <div id="arriba"></div>
     <!-- header -->
     <header>
-
         <!-- HEADER BOOTSTRAP -->
         <nav class="navbar navbar-expand-lg contenedor">
             <div class="container">
@@ -40,25 +39,25 @@
                     arqtech.
                 </a>
                 <!-- BOTON NAV MOBILE -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon icon-mod"></span>
                 </button>
                 <!-- MENU DE LISTAS ACA ESTA EL PROBLEMA DE LA ALINEACION -->
                 <div class="collapse navbar-collapse flex-grow-0 flex-grow-mod" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active ps-5 letrasize" href="./servicios.html">Servicios</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link activo enlace letrasize" href="./servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" href="./proyectos.html">Proyectos</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" href="./proyectos.html">Proyectos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" href="#contacto">Contacto</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -72,22 +71,35 @@
     <!-- main -->
     <main>
         <!-- hero carrousel -->
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <section id="carouselImagenes" class="carousel slide mb-7" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <!-- imagenes del carousel -->
             <div class="carousel-inner">
                 <!-- slide #1 -->
+                <div class="carousel-item height-mod">
+                    <img src="../assets/img/background/bgComplejo.jpg" class="d-none d-sm-block w-100 img-filter"
+                        alt="esquina de una casa">
+                    <img src="../assets/img/fotos/heroEdificio1.jpg" class="d-block d-sm-none w-100 img-filter"
+                        alt="edificio amarillo">
+                    <div class="carousel-caption text-start d-md-block">
+                        <h2 class="col-lg-8 col-xl-6 my-4">Quienes somos y que hacemos</h2>
+                        <p class="col-lg-8 col-xl-6 mb-5 txtWhite">En arqtech. somos un equipo interdisciplinar de
+                            diseño, comprometidos en la creación
+                            de arquitectura innovadora adaptada a cada usuario.</p>
+                    </div>
+                </div>
+                <!-- slide #2 -->
                 <div class="carousel-item active height-mod">
                     <img src="../assets/img/background/bgIndex.jpg" class="d-none d-sm-block w-100 img-filter"
                         alt="edificio de arquitectura arabiga">
-                    <img src="../assets/img/fotos/edificioRosa.jpg" class="d-block d-sm-none w-100 img-filter"
+                    <img src="../assets/img/fotos/heroEdificio2.jpg" class="d-block d-sm-none w-100 img-filter"
                         alt="edificio rosa">
                     <div class="carousel-caption text-start d-md-block row">
                         <h2 class="col-lg-8 col-xl-6 my-4">Transformacion. dedicacion. realidad. arqtech.</h2>
@@ -97,24 +109,12 @@
                         </p>
                     </div>
                 </div>
-                <!-- slide #2 -->
-                <div class="carousel-item height-mod">
-                    <img src="../assets/img/background/bgProyectos.jpg" class="d-none d-sm-block w-100 img-filter"
-                        alt="esquina de una casa">
-                    <img src="../assets/img/fotos/edificioAmarillo.jpg" class="d-block d-sm-none w-100 img-filter"
-                        alt="edificio amarillo">
-                    <div class="carousel-caption text-start d-md-block">
-                        <h2 class="col-lg-8 col-xl-6 my-4">Quienes somos y que hacemos</h2>
-                        <p class="col-lg-8 col-xl-6 mb-5 txtWhite">En arqtech. somos un equipo interdisciplinar de
-                            diseño, comprometidos en la creación
-                            de arquitectura innovadora adaptada a cada usuario.</p>
-                    </div>
-                </div>
                 <!-- slide #3 -->
                 <div class="carousel-item height-mod">
                     <img src="../assets/img/background/bgServicios.jpg" class="d-none d-sm-block w-100 img-filter"
                         alt="esquina de una casa moderna">
-                    <img src="../assets/img/fotos/esquina.png" class="d-block d-sm-none w-100 img-filter" alt="...">
+                    <img src="../assets/img/fotos/heroEdificio3.jpg" class="d-block d-sm-none w-100 img-filter"
+                        alt="...">
                     <div class="carousel-caption text-start d-md-block">
                         <h2 class="col-lg-8 col-xl-6 my-4">Proyectos y direccion de obra.</h2>
                         <p class="col-lg-8 col-xl-6 mb-5 txtWhite">Trabajamos bajo el concepto de lograr una utilización
@@ -125,65 +125,66 @@
                 </div>
             </div>
             <!-- final imagenes del carousel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagenes" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImagenes" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </section>
 
-        <!--NUESTRO ESTUDIO VALORES -->
-        <div class="contenedor p-18">
-            <div class="container-fluid row">
-                <section class="col-sm-6 mt-5 pe-5 verticalBox boxNuestroEstudio wow animate__animated animate__zoomIn">
-                    <h3>Nuestro estudio</h3>
-                    <p>arqtech. es un estudio de arquitectura, dedicado a la realización de obras de arquitectura
-                        enmarcadas
-                        en una gestión integral, enfocándose en el desarrollo de emprendimientos de diferentes
-                        complejidades
-                        y escalas, concentrándose particularmente en la vivienda unifamiliar.</p>
-                    <p>Somos un estudio de tres generaciones, en el que se combina la experiencia, el saber y la
-                        tradición
-                        junto a la innovación y la experimentación.</p>
-                    <p>Trabajamos integrando la arquitectura y el interiorismo. Entendemos el diseño , en cualquiera de
-                        sus
-                        manifestaciones como un valor agregado o un pensamiento construido que parte de un concepto
-                        intrinco
-                        de cada proyecto.</p>
-                    <p>Si bien todos los proyectos desarrollados por el estudio comparten las mismas búsquedas dirigidas
-                        hacia la construcción de un lenguaje arquitectónico propio y el desarrollo de una metodología de
-                        trabajo común, cada uno de ellos son concebidos como una nueva oportunidad de reflexión sobre
-                        las
-                        formas de hacer arquitectura, el análisis de nuevas tipologías, la relación con el entorno
-                        urbano y
-                        una lectura del siempre cambiante contexto que rodea a la producción arquitectónica.</p>
-                </section>
+        <!-- seccion 1 NUESTRO ESTUDIO y NUESTROS VALORES -->
+        <div class="contenedor">
+            <div class="container pm-18">
+                <div class="row">
 
-                <!-- Nuestros valores -->
-                <section class="col-sm-6 mt-5 verticalBox boxValores wow animate__animated animate__zoomIn">
-                    <h3>Nuestros valores</h3>
-                    <h5>ENFOQUE AL CLIENTE</h5>
-                    <p>Enfocamos todas nuestras acciones a superar las expectativas de nuestros inversores.</p>
-                    <h5>COMPROMISO</h5>
-                    <p>Entregamos todo nuestro esfuerzo y profesionalismo en cada uno de los proyectos y tareas que
-                        asumimos.</p>
-                    <h5>TRANSPARENCIA</h5>
-                    <p>Mantenemos un comportamiento íntegro, transparente y honesto en todas nuestras actividades y
-                        hacia
-                        todas las personas con las que nos relacionamos.</p>
-                    <h5>TRABAJO EN EQUIPO</h5>
-                    <p>Fomentamos la participación de todos los integrantes de nuestro equipo y una colaboración
-                        efectiva
-                        alineada con un objetivo común.</p>
-                    <h5>EFICIENCIA</h5>
-                    <p>Trabajamos bajo el concepto de lograr una utilización óptima de nuestros recursos, para así poder
-                        maximizar la calidad de nuestros resultados.</p>
-                </section>
+                    <!-- nuestro estudio -->
+                    <section class="col-lg-6 mt-7 pe-5 pe-mobile-0">
+                        <h3 class="pb-5 wow animate__animated animate__zoomIn">Nuestro estudio</h3>
+                        <p class="wow animate__animated animate__zoomIn">arqtech. es un estudio de arquitectura,
+                            dedicado a la realización de obras de arquitectura enmarcadas en una gestión integral,
+                            enfocándose en el desarrollo de emprendimientos de diferentes complejidades y escalas,
+                            concentrándose particularmente en la vivienda unifamiliar.</p>
+                        <p class="wow animate__animated animate__zoomIn">Somos un estudio de tres generaciones, en el
+                            que se combina la experiencia, el saber y la tradición junto a la innovación y la
+                            experimentación.</p>
+                        <p class="wow animate__animated animate__zoomIn">Trabajamos integrando la arquitectura y el
+                            interiorismo. Entendemos el diseño , en cualquiera de sus manifestaciones como un valor
+                            agregado o un pensamiento construido que parte de un concepto intrinco de cada proyecto.</p>
+                        <p class="wow animate__animated animate__zoomIn">Si bien todos los proyectos desarrollados por
+                            el estudio comparten las mismas búsquedas dirigidas hacia la construcción de un lenguaje
+                            arquitectónico propio y el desarrollo de una metodología de trabajo común, cada uno de ellos
+                            son concebidos como una nueva oportunidad de reflexión sobre las formas de hacer
+                            arquitectura, el análisis de nuevas tipologías, la relación con el entorno urbano y una
+                            lectura del siempre cambiante contexto que rodea a la producción arquitectónica.</p>
+                    </section>
+
+                    <!-- nuestros valores -->
+                    <section class="col-lg-6 mt-7">
+                        <h3 class="pb-5 wow animate__animated animate__zoomIn">Nuestros valores</h3>
+                        <h5 class="mt-5 wow animate__animated animate__zoomIn">enfoque al cliente</h5>
+                        <p class="wow animate__animated animate__zoomIn">Enfocamos todas nuestras acciones a superar las
+                            expectativas de nuestros inversores.</p>
+                        <h5 class="mt-5 wow animate__animated animate__zoomIn">compromiso</h5>
+                        <p class="wow animate__animated animate__zoomIn">Entregamos todo nuestro esfuerzo y
+                            profesionalismo en cada uno de los proyectos y tareas que asumimos.</p>
+                        <h5 class="mt-5 wow animate__animated animate__zoomIn">transparencia</h5>
+                        <p class="wow animate__animated animate__zoomIn">Mantenemos un comportamiento íntegro,
+                            transparente y honesto en todas nuestras actividades y hacia todas las personas con las que
+                            nos relacionamos.</p>
+                        <h5 class="mt-5 wow animate__animated animate__zoomIn">trabajo en equipo</h5>
+                        <p class="wow animate__animated animate__zoomIn">Fomentamos la participación de todos los
+                            integrantes de nuestro equipo y una colaboración efectiva alineada con un objetivo común.
+                        </p>
+                        <h5 class="mt-5 wow animate__animated animate__zoomIn">eficiencia</h5>
+                        <p class="wow animate__animated animate__zoomIn">Trabajamos bajo el concepto de lograr una
+                            utilización óptima de nuestros recursos, para así poder maximizar la calidad de nuestros
+                            resultados.</p>
+                    </section>
+
+                </div>
             </div>
         </div>
 
@@ -192,9 +193,9 @@
             <div class="caja caja1"></div>
             <div class="caja caja2"></div>
             <div class="caja caja3"></div>
-            <div class="caja caja4"></div>
-            <div class="caja caja5"></div>
-            <div class="caja caja6"></div>
+            <div class="caja caja4 d-none d-sm-block"></div>
+            <div class="caja caja5 d-none d-sm-block"></div>
+            <div class="caja caja6 d-none d-lg-block"></div>
             <div class="caja caja7 d-none d-lg-block"></div>
             <div class="caja caja8 d-none d-lg-block"></div>
             <div class="caja caja9 d-none d-lg-block"></div>
@@ -204,115 +205,124 @@
             <div class="caja caja13 d-none d-lg-block"></div>
         </section>
 
-        <!-- QUIENES SOMOS -->
-        <div class="contenedor p-18">
-            <div class="container-fluid row">
-                <!-- quienes somos -->
-                <section
-                    class="col-lg-6 justify-content-start verticalBox boxQuienesSomos wow animate__animated animate__zoomIn">
-                    <h3>Nuestro trabajo</h3>
-                    <p class="mb-5">Como estudio de arquitectura, realizamos proyectos y ejecución de obras de
-                        diferentes tipos y
-                        escalas.</p>
-                    <p class="mb-5">Calidad, diseño y ubicación son nuestras premisas centrales para hacer arquitectura.
-                    </p>
-                    <p class="mb-5">Estas son las cualidades que se destacan en nuestros proyectos, diseñados con
-                        detalles estéticos,
-                        materiales nobles y una excelente técnica constructiva.</p>
-                    <p class="mb-5">El equipo acompaña al cliente desde las ideas iniciales, hasta la materialización
-                        del espacio.</p>
-                    <div class="container-fluid">
-                        <div class="row"><a class="col col-md-6 btn btn-outline-dark btn-lg py-3 px-5 mt-5 btn-mod"
-                                href="./proyectos.html" role="button">Ver Proyectos</a></div>
-                    </div>
-                </section>
-
-                <!-- que hacemos -->
-                <section class="col-lg-6 justify-content-start verticalBox boxQueHacemos">
-                    <!-- tarjeta concepto -->
-                    <div class="tarjetaBox wow animate__animated animate__zoomIn">
-                        <div class="iconBox bg1 centrar">
-                            <img src="../assets/img/iconos/concepto.png"
-                                alt="icono representando de manera abstracta un concepto" class="icono">
-                        </div>
-                        <div class="textBox">
-                            <h5 class="cardTittle">CONCEPTO</h5>
-                            <p>Lineamientos y criterios de diseño. Según presupuesto y necesidades. Transformación de
-                                las
-                                ideas en proyecto de arquitectura.</p>
-                        </div>
-                    </div>
-                    <!-- tarjeta proyecto -->
-                    <div class="tarjetaBox mt-5 wow animate__animated animate__zoomIn">
-                        <div class="iconBox bg2 centrar">
-                            <img src="../assets/img/iconos/proyecto.png" alt="icono representando un plano"
-                                class="icono">
-                        </div>
-                        <div class="textBox">
-                            <h5 class="cardTittle">PROYECTO</h5>
-                            <p>Elaboración de documentación de obra. Obra nueva y remodelación. Documentación completa
-                                al
-                                detalle.</p>
-                        </div>
-                    </div>
-                    <!-- tarjeta direccion -->
-                    <div class="tarjetaBox mt-5 wow animate__animated animate__zoomIn">
-                        <div class="iconBox bg3 centrar">
-                            <img src="../assets/img/iconos/direccion.png" alt="icono representando un hombre con casco"
-                                class="icono">
-                        </div>
-                        <div class="textBox">
-                            <h5 class="cardTittle">DIRECCION</h5>
-                            <p>Interpretación del proyecto ejecutivo y control de obra.</p>
-                        </div>
-                    </div>
-                    <!-- tarjeta ejecucion -->
-                    <div class="tarjetaBox mt-5 wow animate__animated animate__zoomIn">
-                        <div class="iconBox bg4 centrar">
-                            <img src="../assets/img/iconos/ejecucion.png" alt="icono representando un muro de ladrillos"
-                                class="icono">
-                        </div>
-                        <div class="textBox">
-                            <h5 class="cardTittle">EJECUCION</h5>
-                            <p>Administración de obra. Nos encargamos de realizar la logistica y gestion de todos lo
-                                recursos necesarios para ejecutar tus obras.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- contenedor ubicacion y contacto -->
-        <div class="contenedor p-18 mt-5">
-            <div class="container-fluid row pm-0">
-                <!-- ubicacion -->
-                <section class="col-lg-6 mt-5 verticalBox boxUbicacion wow animate__animated animate__zoomIn">
-                    <h3>ubicacion</h3>
-                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-                    <p>(603) 555-0123</p>
-                    <p>georgia.young@example.com</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13101.777421080134!2d-58.49726015!3d-34.819918650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652384779746!5m2!1ses-419!2sar"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </section>
-                <!-- contacto -->
-                <section class="col-lg-6 mt-5 verticalBox boxContacto wow animate__animated animate__zoomIn">
-                    <h3 id="contacto">contacto</h3>
-                    <form action="">
-                        <label for="name">Nombre completo</label>
-                        <input id="name" type="text">
-                        <label for="mail">Correo electronico</label>
-                        <input id="mail" type="email">
-                        <label for="phone">Telefono</label>
-                        <input id="phone" type="text">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea type="text" id="mensaje"></textarea>
+        <!-- UBICACION CONTACTO PROYECTOS -->
+        <div class="contenedor">
+            <div class="container pm-18">
+                <div class="row">
+                    <!-- seccion 2 NUESTRO TRABAJO -->
+                    <section class="col-12 col-lg-5 col-xl-6 mt-8 pe-5 pe-mobile-0">
+                        <h3 class="pb-5 wow animate__animated animate__zoomIn">Nuestro trabajo</h3>
+                        <p class="wow animate__animated animate__zoomIn">Como estudio de arquitectura, realizamos
+                            proyectos y ejecución de obras de diferentes tipos y escalas.</p>
+                        <p class="wow animate__animated animate__zoomIn">Calidad, diseño y ubicación son nuestras
+                            premisas centrales para hacer arquitectura.</p>
+                        <p class="wow animate__animated animate__zoomIn">Estas son las cualidades que se destacan en
+                            nuestros proyectos, diseñados con detalles estéticos, materiales nobles y una excelente
+                            técnica constructiva.</p>
+                        <p class="wow animate__animated animate__zoomIn">El equipo acompaña al cliente desde las ideas
+                            iniciales, hasta la materialización del espacio.</p>
+                        <!-- boton -->
                         <div class="container-fluid">
-                            <div class="row"><a class="col col-md-6 btn btn-outline-dark btn-lg py-3 px-5 mt-5 btn-mod"
-                                    href="#" role="button">Enviar consulta</a></div>
+                            <div class="row">
+                                <a class="col col-md-6 btn py-3 px-5 mt-5 btn-mod wow animate__animated animate__zoomIn"
+                                    href="./proyectos.html" role="button">Ver Proyectos</a>
+                            </div>
                         </div>
-                    </form>
-                </section>
+                    </section>
+                    <!-- tarjeta box -->
+                    <section class="col-12 col-lg-7 col-xl-6 mt-8">
+
+                        <!-- tarjeta concepto -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg1 centrar">
+                                <img src="../assets/img/iconos/concepto.png"
+                                    alt="icono representando de manera abstracta un concepto" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">CONCEPTO</h5>
+                                <p>Lineamientos y criterios de diseño. Según presupuesto y necesidades. Transformación
+                                    de
+                                    las
+                                    ideas en proyecto de arquitectura.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta proyecto -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg2 centrar">
+                                <img src="../assets/img/iconos/proyecto.png" alt="icono representando un plano"
+                                    class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">PROYECTO</h5>
+                                <p>Elaboración de documentación de obra. Obra nueva y remodelación. Documentación
+                                    completa
+                                    al
+                                    detalle.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta direccion -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg3 centrar">
+                                <img src="../assets/img/iconos/direccion.png"
+                                    alt="icono representando un hombre con casco" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">DIRECCION</h5>
+                                <p>Interpretación del proyecto ejecutivo y control de obra.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta ejecucion -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg4 centrar">
+                                <img src="../assets/img/iconos/ejecucion.png"
+                                    alt="icono representando un muro de ladrillos" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">EJECUCION</h5>
+                                <p>Administración de obra. Nos encargamos de realizar la logistica y gestion de todos lo
+                                    recursos necesarios para ejecutar tus obras.</p>
+                            </div>
+                        </div>
+                        <!-- fin tarjetas -->
+                    </section>
+
+                    <!-- seccion 3 UBICACION y CONTACTO -->
+                    <!-- ubicacion -->
+                    <section class="col-lg-6 mt-8 wow animate__animated animate__fadeIn">
+                        <h3 class="pb-5">ubicacion</h3>
+                        <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                        <p>(603) 555-0123</p>
+                        <p>georgia.young@example.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13101.777421080134!2d-58.49726015!3d-34.819918650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652384779746!5m2!1ses-419!2sar"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+
+                    <!-- contacto -->
+                    <section class="col-lg-6 mt-8 wow animate__animated animate__fadeIn">
+                        <h3 id="contacto" class="pb-5">contacto</h3>
+                        <form action="">
+                            <label for="name">Nombre completo</label>
+                            <input id="name" type="text">
+                            <label for="mail">Correo electronico</label>
+                            <input id="mail" type="email">
+                            <label for="phone">Telefono</label>
+                            <input id="phone" type="text">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea type="text" id="mensaje"></textarea>
+                            <!-- boton -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <a class="col col-md-6 btn py-3 px-5 mt-5 btn-mod" href="#" role="button">Enviar
+                                        consulta</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
         </div>
 
