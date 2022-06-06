@@ -20,185 +20,8 @@ footer {
     width: 100%;
 }
 
-/* FUENTES Y TEXTO */
-/* FUENTES */
-
-.logo {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-
-/* ANIMACION LOGO */
-.logoAnimado {
-    animation: animacionLogo 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-delay: 0.3s;
-}
-
-@keyframes animacionLogo {
-    0% {
-        letter-spacing: -1rem;
-        transform: translateZ(-100px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.6;
-    }
-
-    100% {
-        transform: translateZ(0);
-        opacity: 1;
-        letter-spacing: normal;
-    }
-}
-
-h2 {
-    font-size: 4.8rem;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 3.8rem;
-    font-weight: 700;
-    margin-bottom: 2.8rem;
-}
-
-h5 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 0.7rem;
-}
-
-
-/* apratado para interno banner grid experimental */
-.grid-banner {
-    margin: 8rem 0;
-    display: grid;
-    grid-template-columns: repeat(24, auto);
-    grid-template-rows: repeat(8, 60px);
-    gap: 18px;
-    padding: 0;
-}
-
-.caja1 {
-    background: url("../assets/img/fotos/edificioAmarillo.jpg");
-    grid-column: 1/5;
-    grid-row: 1/5;
-}
-
-.caja2 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 5/11;
-    grid-row: 2/5;
-}
-
-.caja3 {
-    background: url("../assets/img/background/bgProyectos.jpg");
-    grid-column: 11/16;
-    grid-row: 3/6;
-}
-
-.caja4 {
-    background: url("../assets/img/background/bgServicios.jpg");
-    grid-column: 19/25;
-    grid-row: 1/4;
-}
-
-.caja5 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 1/6;
-    grid-row: 5/9;
-}
-
-.caja6 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 6/11;
-    grid-row: 5/8;
-}
-
-.caja7 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 11/14;
-    grid-row: 6/8;
-}
-
-.caja8 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 14/16;
-    grid-row: 6/7;
-}
-
-.caja9 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 16/22;
-    grid-row: 4/8;
-}
-
-.caja10 {
-    background: url("../assets/img/fotos/esquina.png");
-    grid-column: 22/24;
-    grid-row: 4/6;
-}
-
-.caja11 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 24/25;
-    grid-row: 4/6;
-}
-
-.caja12 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 22/25;
-    grid-row: 6/9;
-}
-
-.caja13 {
-    background: url("../assets/img/background/bgIndex.jpg");
-    grid-column: 16/19;
-    grid-row: 2/4;
-}
-
-.caja {
-    background-color: darkslategrey;
-    width: auto;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* fin apratado para interno banner grid esperimental */
-
-
-p {
-    font-size: 1.8rem;
-    line-height: 27px;
-    /* margin-bottom: 3rem; */
-}
-
-/* CONTENEDORES GENERALES */
-.contenedor {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tittle {
-    text-align: center;
-    max-width: 80%;
-    margin: 5rem auto;
-}
-
-.centrar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.verticalBox {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.animate__delay-05s {
+    animation-delay: 0.5s;
 }
 
 /* Boton subir */
@@ -256,57 +79,173 @@ p {
 
 /* fin boton subir */
 
-/* botones redes sociales */
-.menuSocial {
-    text-align: center;
-    margin: 2rem 0;
+/* FUENTES Y TEXTO */
+.logo {
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
-.menuSocial img {
-    width: 60px;
-    padding: 10px;
-    border-radius: 5px;
+/* ANIMACION LOGO */
+.logoAnimado {
+    animation: animacionLogo 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-delay: 0.3s;
 }
 
-/* +++++++++++++++++++++++++++++++++++ SOLO INDEX.HTML ++++++++++++++++++++++++++++++++++++ */
-/* ********************************** GRID LAYOUT INICIO ********************************** */
-.gridLayoutInicio {
+@keyframes animacionLogo {
+    0% {
+        letter-spacing: -1rem;
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: normal;
+    }
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* apratado para servicios banner grid */
+.grid-banner {
+    margin: 8rem 0 4rem 0;
     display: grid;
-    grid-template-areas:
-        /* 4 columnas */
-        "tittleCard tittleCard tittleCard tittleCard"
-        "boxQuienesSomos boxQuienesSomos boxQueHacemos boxQueHacemos"
-        "boxUbicacion boxUbicacion boxContacto boxContacto";
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    grid-template-rows: auto auto auto;
-    padding: 0 18px;
+    grid-template-columns: repeat(24, auto);
+    grid-template-rows: repeat(8, 60px);
+    gap: 18px;
+    padding: 0;
 }
 
-.gridLayoutInicio .tittle {
-    grid-area: tittleCard;
+.caja1 {
+    background: url("../assets/img/fotos/edificioAmarillo.jpg");
+    grid-column: 1/5;
+    grid-row: 1/5;
 }
 
-.boxQuienesSomos {
-    grid-area: boxQuienesSomos;
+.caja2 {
+    background: url("../assets/img/fotos/carouselProyectos/camaGris.jpg");
+    grid-column: 5/11;
+    grid-row: 2/5;
 }
 
-.boxQueHacemos {
-    grid-area: boxQueHacemos;
+.caja3 {
+    background: url("../assets/img/background/bgComplejo.jpg");
+    grid-column: 11/16;
+    grid-row: 3/6;
 }
 
-.boxUbicacion {
-    grid-area: boxUbicacion;
+.caja4 {
+    background: url("../assets/img/background/bgServicios.jpg");
+    grid-column: 19/25;
+    grid-row: 1/4;
 }
 
-.boxContacto {
-    grid-area: boxContacto;
+.caja5 {
+    background: url("../assets/img/fotos/casaModular.jpg");
+    grid-column: 1/6;
+    grid-row: 5/9;
 }
 
-/* ********************************** FINAL GRID LAYOUT INICIO ********************************** */
-/* +++++++++++++++++++++++++++++++++++ FINAL SOLO INDEX.HTML ++++++++++++++++++++++++++++++++++++ */
+.caja6 {
+    background: url("../assets/img/fotos/cocinaVidrioEstantes.jpg");
+    grid-column: 6/11;
+    grid-row: 5/8;
+}
 
-/* +++++++++++++++++++++++++++++++++++++ SOLO PROYECTOS.HTML ++++++++++++++++++++++++++++++++++++ */
+.caja7 {
+    background: url("../assets/img/fotos/carouselProyectos/interiorBano.jpg");
+    grid-column: 11/14;
+    grid-row: 6/8;
+}
+
+.caja8 {
+    background: url("../assets/img/fotos/carouselProyectos/cocinaMadera.png");
+    grid-column: 14/16;
+    grid-row: 6/7;
+}
+
+.caja9 {
+    background: url("../assets/img/background/bgIndex.jpg");
+    grid-column: 16/22;
+    grid-row: 4/8;
+}
+
+.caja10 {
+    background: url("../assets/img/fotos/esquina.png");
+    grid-column: 22/24;
+    grid-row: 4/6;
+}
+
+.caja11 {
+    background: url("../assets/img/background/bgIndex.jpg");
+    grid-column: 24/25;
+    grid-row: 4/6;
+}
+
+.caja12 {
+    background: url("../assets/img/fotos/carouselProyectos/interiorConSillon.jpg");
+    grid-column: 22/25;
+    grid-row: 6/9;
+}
+
+.caja13 {
+    background: url("../assets/img/fotos/interior.jpg");
+    grid-column: 16/19;
+    grid-row: 2/4;
+}
+
+.caja {
+    background-color: darkslategrey;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fin apartado para servicios banner grid */
+
+/* CONTENEDORES GENERALES */
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tittle {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ************************************ GRID LAYOUT PROYECTOS *********************************** */
 .gridLayoutProyectos {
     width: 100%;
@@ -314,22 +253,17 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-        /* 6 columnas */
-        "tittle tittle tittle tittle tittle tittle"
-        "box1 box1 box1 box1 box2 box2"
-        "box3 box3 box4 box4 box5 box5"
-        "box6 box6 box7 box7 box7 box7"
-        "box8 box8 box8 box8 box9 box9"
-        "box8 box8 box8 box8 box10 box10"
-        "box8 box8 box8 box8 box10 box10"
-        "boxUbicacion boxUbicacion boxUbicacion boxContacto boxContacto boxContacto";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto 400px 400px 400px 200px 200px 100px auto;
+        /* 3 columnas */
+        "tittle tittle tittle"
+        "box1 box1 box2"
+        "box3 box4 box5"
+        "box6 box7 box7"
+        "box8 box8 box9"
+        "box8 box8 box10"
+        "box8 box8 box10";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 400px 400px 400px 200px 200px 100px;
     padding: 0 18px;
-}
-
-.heroProyectos {
-    grid-area: hero;
 }
 
 .gridLayoutProyectos .tittle {
@@ -410,63 +344,23 @@ p {
 }
 
 /* ********************************** FINAL GRID LAYOUT PROYECTOS ******************************* */
-/* +++++++++++++++++++++++++++++++++++ FINAL SOLO PROYECTOS.HTML ++++++++++++++++++++++++++++++++ */
-
-
-/*++++++++++++++++++++++++++++++++++++++++ GRID SERVICIOS ++++++++++++++++++++++++++++++++++++++++*/
-.gridLayoutServicios {
-    display: grid;
-    grid-template-areas:
-        /* 2 columnas */
-        "boxEstudio boxValores"
-        "boxBanner boxBanner"
-        "boxQuienesSomos boxQueHacemos"
-        "boxUbicacion boxContacto";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto;
-    column-gap: 2rem;
-    justify-content: space-between;
-    padding: 0 18px;
-}
-
-.boxNuestroEstudio {
-    grid-area: boxEstudio;
-}
-
-.boxValores {
-    grid-area: boxValores;
-    justify-self: flex-end;
-}
-
-.boxNuestroEstudio,
-.boxValores {
-    max-width: 95%;
-}
-
-.banner {
-    grid-area: boxBanner;
-    width: 100%;
-    height: 300px;
-    margin-top: 10rem;
-    background-image: url(../assets/img/fotos/casaDosPisos.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/*+++++++++++++++++++++++++++++++++++++ FINAL GRID SERVICIOS +++++++++++++++++++++++++++++++++++++*/
 
 .tarjetaBox {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.tarjetaBox:last-child {
+    margin-bottom: 0;
 }
 
 .iconBox {
     width: 115px;
     height: 115px;
     padding: 5px;
-    margin-right: 70px;
+    margin-right: 2rem;
     border-radius: 5px;
-    margin-bottom: 2rem;
 }
 
 .bg1 {
@@ -495,11 +389,18 @@ label {
 input,
 textarea {
     width: 100%;
+    font-size: 1.3rem;
     background-color: #E5E5E5;
     border: none;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 2.5rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    box-shadow: 0px 4px 7px 0px rgba(161, 161, 161, 0.8);
+    font-size: 1.8rem;
 }
 
 iframe {
@@ -508,6 +409,7 @@ iframe {
     border: none;
 }
 
+/* FOOTER */
 footer {
     padding: 1.5rem 0;
     margin-top: 10rem;
@@ -524,16 +426,92 @@ footer .contenedor {
     align-items: center;
 }
 
-/************************** CLASES BOOTSTRAP **************************/
-
-/* reset padding margin */
-.pm-0 {
-    margin: 0;
-    padding: 0;
+/* botones redes sociales */
+.menuSocial {
+    text-align: center;
+    margin: 2rem 0;
 }
 
-.margin-auto {
-    margin: 0 auto;
+.menuSocial img {
+    width: 60px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/************************** CLASES COMPLEMENTARIAS A BOOTSTRAP **************************/
+
+/* HEADER */
+.enlace {
+    color: #141414;
+    border-bottom: 3px solid transparent;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.enlace:hover {
+    border-color: #141414;
+}
+
+.activo {
+    border-color: #141414;
+}
+
+.icon-mod {
+    width: 30px;
+    height: 30px;
+}
+
+/* MARGENES EXTRAS */
+/* margin bottom */
+.mb-6 {
+    margin-bottom: 4rem;
+}
+
+.mb-7 {
+    margin-bottom: 5rem;
+}
+
+.mb-8 {
+    margin-bottom: 6rem;
+}
+
+/* margin top */
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mt-7 {
+    margin-top: 5rem;
+}
+
+.mt-8 {
+    margin-top: 6rem;
+}
+
+/* PADDING EXTRAS */
+/* padding bottom */
+.pb-6 {
+    padding-bottom: 4rem;
+}
+
+.pb-7 {
+    padding-bottom: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 6rem;
+}
+
+/* padding top */
+.pt-6 {
+    padding-top: 4rem;
+}
+
+.pt-7 {
+    padding-top: 5rem;
+}
+
+.pt-8 {
+    padding-top: 6rem;
 }
 
 .letrasize {
@@ -541,64 +519,129 @@ footer .contenedor {
     font-weight: 500;
 }
 
+/* color font carousel */
 .txtWhite {
     color: whitesmoke;
 }
 
+/* altura carousel */
 .height-mod {
     max-height: 80vh;
     overflow: hidden;
 }
 
-.img-filter {
-    filter: brightness(0.4);
+.carousel-mod {
+    margin-bottom: 10rem;
 }
 
-.btn-mod {
+/* filtro para imagenes */
+.img-filter {
+    filter: brightness(0.6);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s;
+}
+
+.card:hover .img-filter {
+    filter: brightness(0.3);
+}
+
+/* estilos modificados para los botones */
+.btn-mod:link {
     width: fit-content;
     font-size: 1.8rem;
     font-weight: 600;
-    border-width: 2px;
+    border: 2px solid #141414;
     border-radius: 0;
+    transition: ease-in-out .4s;
+    color: #141414;
+    position: relative;
+    background-color: none;
 }
 
-.cards-margin-mod {
-    margin-top: 10rem;
+.btn-mod:hover {
+    border: 2px solid #141414;
+    background-color: #141414;
+    color: whitesmoke;
 }
 
+.btn-mod:visited {
+    background-color: #575757;
+}
+
+/* modificacion del modal en la pagina proyectos */
 .modal-mod {
     width: 800px;
-    max-width: 90vw;
-    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #141414;
+}
+
+.carousel-wh {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .img-modal {
     width: 100%;
 }
 
+.pe-5 {
+    padding-right: 3rem;
+}
+
 /************************** FIN CLASES BOOTSTRAP **************************/
-/* tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
 /************************ MEDIASQUERIES TABLET ************************/
-@media (min-width: 601px) and (max-width: 960px) {
+/************************ MEDIASQUERIES TABLET ************************/
+/************************ MEDIASQUERIES TABLET ************************/
+/************************ MEDIASQUERIES TABLET ************************/
+/************************ MEDIASQUERIES TABLET ************************/
+/************************ MEDIASQUERIES TABLET ************************/
+@media (min-width: 576px) and (max-width: 991px) {
 
     html {
         font-size: 58%;
     }
 
-    .gridLayoutInicio {
-        display: grid;
-        grid-template-areas:
-            /* 2 columnas */
-            "tittleCard tittleCard"
-            "boxQuienesSomos boxQuienesSomos"
-            "boxQueHacemos boxQueHacemos"
-            "boxContacto boxContacto"
-            "boxUbicacion boxUbicacion";
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 2rem;
-        grid-template-rows: repeat(5, auto);
+    iframe {
+        width: 100%;
     }
 
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .enlace {
+        border: none;
+    }
+
+    .box2,
+    .box4,
+    .box6,
+    .box10 {
+        padding: 2rem 1 rem;
+        text-align: center;
+    }
+
+    /* paddin 18px a los lados */
+    .pm-18 {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /* padding 0 a la derecha */
+    .pe-mobile-0 {
+        padding-right: 0rem;
+    }
+
+    .img-filter {
+        filter: brightness(0.3);
+    }
+
+    /* grid layout para pagina proyectos */
     .gridLayoutProyectos {
         width: 100%;
         max-width: 1200px;
@@ -613,11 +656,9 @@ footer .contenedor {
             "box6 box6"
             "box8 box8"
             "box10 box10"
-            "box9 box9"
-            "boxContacto boxContacto"
-            "boxUbicacion boxUbicacion";
+            "box9 box9";
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(4, auto) 200px auto 200px auto auto;
+        grid-template-rows: auto repeat(4, auto) 200px auto 200px auto;
     }
 
     .imgHorizontal img {
@@ -628,57 +669,48 @@ footer .contenedor {
         width: auto;
     }
 
-    h2 {
-        font-size: 3.8rem;
-    }
-
+    /* banner servicios tablet */
     .grid-banner {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 50px);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 50px);
         gap: 10px;
     }
 
     .caja1 {
-        grid-column: 1/4;
-        grid-row: 2/5;
+        grid-column: 1/2;
+        grid-row: 1/5;
     }
 
     .caja2 {
-        grid-column: 5/7;
-        grid-row: 1/3;
+        grid-column: 2/3;
+        grid-row: 2/6;
     }
 
     .caja3 {
-        grid-column: 1/3;
-        grid-row: 5/7;
+        grid-column: 3/4;
+        grid-row: 1/5;
     }
 
     .caja4 {
-        grid-column: 4/6;
-        grid-row: 3/6;
+        grid-column: 4/5;
+        grid-row: 2/6;
     }
 
     .caja5 {
-        grid-column: 6/7;
-        grid-row: 4/7;
+        grid-column: 5/6;
+        grid-row: 1/5;
     }
-
-    .caja6 {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-
-    .p-18 {
-        padding: 0 18px;
-    }
-
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* fin banner servicios tablet */
+
 /* ***********************MEDIAS QUERIES MOBILE*********************** */
-
-
-@media (max-width: 600px) {
+/* ***********************MEDIAS QUERIES MOBILE*********************** */
+/* ***********************MEDIAS QUERIES MOBILE*********************** */
+/* ***********************MEDIAS QUERIES MOBILE*********************** */
+/* ***********************MEDIAS QUERIES MOBILE*********************** */
+/* ***********************MEDIAS QUERIES MOBILE*********************** */
+@media (max-width: 575px) {
 
     html {
         font-size: 55.5555%;
@@ -692,13 +724,16 @@ footer .contenedor {
         text-align: center;
     }
 
-    .boxContacto {
-        width: 100%;
+    .img-filter {
+        filter: brightness(0.3);
     }
 
-    .boxNuestroEstudio,
-    .boxValores {
-        max-width: 100%;
+    .box2,
+    .box4,
+    .box6,
+    .box10 {
+        padding: 1.5rem;
+        text-align: center;
     }
 
     /******************** BOOTSTRAP MOBILE ********************/
@@ -706,10 +741,24 @@ footer .contenedor {
         flex-grow: 1;
     }
 
-    .p-18 {
-        padding: 0 18px;
+    /* paddin de 18px para mobile */
+    .pm-18 {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
+    /* padding 0 a la derecha */
+    .pe-mobile-0 {
+        padding-right: 0;
+    }
+
+    .modal-mod {
+        width: 100%;
+    }
+
+    .enlace {
+        border: none;
+    }
     /****************** FIN BOOTSTRAP MOBILE ********************/
 
     .tarjetaBox {
@@ -717,28 +766,16 @@ footer .contenedor {
         align-items: center;
     }
 
-    .tarjetaBox .iconBox {
-        margin: 0 0 3rem 0;
+    .iconBox {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
 
-    .gridLayoutInicio {
-        display: grid;
-        grid-template-areas:
-            "tittleCard"
-            "boxQuienesSomos"
-            "boxQueHacemos"
-            "boxContacto"
-            "boxUbicacion";
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        justify-items: center;
+    .card {
+        margin-bottom: 18px;
     }
 
-    .gridLayoutInicio .tittle {
-        width: 100%;
-        max-width: 100%;
-    }
-
+    /* grid layout pagina proyectos */
     .gridLayoutProyectos {
         width: 100%;
         max-width: 1200px;
@@ -752,12 +789,9 @@ footer .contenedor {
             "box6 box6"
             "box8 box8"
             "box10 box10"
-            "box9 box9"
-            "boxContacto boxContacto"
-            "boxUbicacion boxUbicacion"
-        ;
+            "box9 box9";
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(11, auto);
+        grid-template-rows: repeat(9, auto);
     }
 
     .imgHorizontal img {
@@ -769,59 +803,30 @@ footer .contenedor {
         width: 100%;
     }
 
-    .gridLayoutServicios {
-        display: grid;
-        grid-template-areas:
-            "boxEstudio"
-            "boxValores"
-            "boxBanner"
-            "boxQuienesSomos"
-            "boxQueHacemos"
-            "boxContacto"
-            "boxUbicacion";
-        grid-template-columns: 1fr;
-        column-gap: 1rem;
-        grid-template-rows: repeat(7, auto);
+    /* banner pagina servicios */
+    .grid-banner {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 40px);
+        gap: 10px;
+    }
+
+    .caja1 {
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+
+    .caja2 {
+        grid-column: 2/3;
+        grid-row: 2/6;
+    }
+
+    .caja3 {
+        grid-column: 3/4;
+        grid-row: 1/5;
     }
 
     iframe {
         width: 100%;
     }
 
-    .grid-banner {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 50px);
-        gap: 10px;
-    }
-
-    .caja1 {
-        grid-column: 1/4;
-        grid-row: 2/5;
-    }
-
-    .caja2 {
-        grid-column: 5/7;
-        grid-row: 1/3;
-    }
-
-    .caja3 {
-        grid-column: 1/3;
-        grid-row: 5/7;
-    }
-
-    .caja4 {
-        grid-column: 4/6;
-        grid-row: 3/6;
-    }
-
-    .caja5 {
-        grid-column: 6/7;
-        grid-row: 4/7;
-    }
-
-    .caja6 {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
 }
-
