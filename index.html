@@ -41,22 +41,23 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon icon-mod"></span>
                 </button>
                 <!-- MENU DE LISTAS ACA ESTA EL PROBLEMA DE LA ALINEACION -->
                 <div class="collapse navbar-collapse flex-grow-0 flex-grow-mod" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active ps-5 letrasize" aria-current="page" href="./index.html">Inicio</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link activo enlace letrasize" aria-current="page"
+                                href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" href="./pages/servicios.html">Servicios</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" href="./pages/servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" href="./pages/proyectos.html">Proyectos</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" href="./pages/proyectos.html">Proyectos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-5 letrasize" href="#contacto">Contacto</a>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link enlace letrasize" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -70,13 +71,13 @@
     <main>
 
         <!-- hero carrousel bootstrap -->
-        <section id="carouselExampleCaptions" class="carousel slide  mb-5" data-bs-ride="carousel">
+        <section id="carouselImagenes" class="carousel slide carousel-mod" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <!-- imagenes del carousel -->
@@ -85,7 +86,7 @@
                 <div class="carousel-item active height-mod">
                     <img src="./assets/img/background/bgIndex.jpg" class="d-none d-sm-block w-100 img-filter"
                         alt="imagen de un edificio de arquitectura arabiga">
-                    <img src="./assets/img/fotos/edificioRosa.jpg" class="d-block d-sm-none w-100 img-filter"
+                    <img src="./assets/img/fotos/heroEdificio1.jpg" class="d-block d-sm-none w-100 img-filter"
                         alt="imagen de un edificio rosa">
                     <div class="carousel-caption text-start d-md-block row">
                         <h2 class="col-lg-8 col-xl-6 my-4">Transformacion. dedicacion. realidad. arqtech.</h2>
@@ -97,9 +98,9 @@
                 </div>
                 <!-- slide #2 -->
                 <div class="carousel-item height-mod">
-                    <img src="./assets/img/background/bgProyectos.jpg" class="d-none d-sm-block w-100 img-filter"
+                    <img src="./assets/img/background/bgComplejo.jpg" class="d-none d-sm-block w-100 img-filter"
                         alt="imagen de varios edificios con fachadas de ladrillo y colores">
-                    <img src="./assets/img/fotos/edificioAmarillo.jpg" class="d-block d-sm-none w-100 img-filter"
+                    <img src="./assets/img/fotos/heroEdificio2.jpg" class="d-block d-sm-none w-100 img-filter"
                         alt="imagen de un edificio amarillo">
                     <div class="carousel-caption text-start d-md-block">
                         <h2 class="col-lg-8 col-xl-6 my-4">Quienes somos y que hacemos</h2>
@@ -112,7 +113,8 @@
                 <div class="carousel-item height-mod">
                     <img src="./assets/img/background/bgServicios.jpg" class="d-none d-sm-block w-100 img-filter"
                         alt="imagen de la esquina de una casa moderna">
-                    <img src="./assets/img/fotos/esquina.png" class="d-block d-sm-none w-100 img-filter" alt="...">
+                    <img src="./assets/img/fotos/heroEdificio3.jpg" class="d-block d-sm-none w-100 img-filter"
+                        alt="...">
                     <div class="carousel-caption text-start d-md-block">
                         <h2 class="col-lg-8 col-xl-6 my-4">Proyectos y direccion de obra.</h2>
                         <p class="col-lg-8 col-xl-6 mb-5 txtWhite">Trabajamos bajo el concepto de lograr una utilización
@@ -123,13 +125,11 @@
                 </div>
             </div>
             <!-- final imagenes del carousel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagenes" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImagenes" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -137,161 +137,179 @@
 
         <!-- tarjetas hacia proyectos bootstrap -->
         <section class="contenedor">
-            <div class="container cards-margin-mod">
+            <div class="container pm-18">
                 <div class="row">
-                    <h3> Proyectos</h3>
-                    <a href="./pages/proyectos.html" class="col-xl-3 col-sm-6 mb-4">
+
+                    <!-- seccion 1 CARDS -->
+                    <h3 class="pb-5"> Proyectos</h3>
+                    <a href="./pages/proyectos.html"
+                        class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInLeft animate__delay-05s">
                         <div class="card">
-                            <img src="./assets/img/fotos/edificioAmarillo.jpg" class="card-img  img-filter"
+                            <img src="./assets/img/fotos/edificioAmarillo.jpg" class="card-img img-filter"
                                 alt="imagen de un edificio amarillo">
-                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                                <h5 class="card-title txtWhite fs-3">Card title</h5>
-                                <p class="card-text txtWhite fs-4">This is a wider card with supporting text below as a
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                                <h5 class="card-title txtWhite fs-3">monte grande</h5>
+                                <p class="card-text txtWhite">This is a wider card with supporting text below as a
                                     natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </a>
-                    <a href="./pages/proyectos.html" class="col-xl-3 col-sm-6 mb-4">
+                    <a href="./pages/proyectos.html"
+                        class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInLeft">
                         <div class="card">
                             <img src="./assets/img/fotos/esquina.png" class="card-img  img-filter"
                                 alt="imagen de un edificio moderno">
-                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                                <h5 class="card-title txtWhite fs-3">Card title</h5>
-                                <p class="card-text txtWhite fs-4">This is a wider card with supporting text below as a
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                                <h5 class="card-title txtWhite fs-3">san cristobal</h5>
+                                <p class="card-text txtWhite">This is a wider card with supporting text below as a
                                     natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </a>
-                    <a href="./pages/proyectos.html" class="col-xl-3 col-sm-6 mb-4">
+                    <a href="./pages/proyectos.html"
+                        class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInRight">
                         <div class="card">
                             <img src="./assets/img/fotos/edificioRosa.jpg" class="card-img  img-filter"
                                 alt="imagen de un edificio rosa">
-                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                                <h5 class="card-title txtWhite fs-3">Card title</h5>
-                                <p class="card-text txtWhite fs-4">This is a wider card with supporting text below as a
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                                <h5 class="card-title txtWhite fs-3">Recoleta</h5>
+                                <p class="card-text txtWhite">This is a wider card with supporting text below as a
                                     natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </a>
-                    <a href="./pages/proyectos.html" class="col-xl-3 col-sm-6 mb-4">
+                    <a href="./pages/proyectos.html"
+                        class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInRight animate__delay-05s">
                         <div class="card">
-                            <img src="./assets/img/fotos/edificioAmarillo.jpg" class="card-img  img-filter"
+                            <img src="./assets/img/fotos/edificioModerno.png" class="card-img  img-filter"
                                 alt="imagen de un edificio amarillo">
-                            <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                                <h5 class="card-title txtWhite fs-3">Card title</h5>
-                                <p class="card-text txtWhite fs-4">This is a wider card with supporting text below as a
+                            <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                                <h5 class="card-title txtWhite fs-3">Cordoba</h5>
+                                <p class="card-text txtWhite">This is a wider card with supporting text below as a
                                     natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </a>
 
+                    <!-- seccion 2 NUESTRO TRABAJO -->
+                    <section class="col-12 col-lg-5 col-xl-6 mt-8 pe-5 pe-mobile-0">
+                        <h3 class="pb-5 wow animate__animated animate__zoomIn">Nuestro trabajo</h3>
+                        <p class="wow animate__animated animate__zoomIn">Como estudio de arquitectura, realizamos
+                            proyectos y ejecución de obras de diferentes tipos y escalas.</p>
+                        <p class="wow animate__animated animate__zoomIn">Calidad, diseño y ubicación son nuestras
+                            premisas centrales para hacer arquitectura.</p>
+                        <p class="wow animate__animated animate__zoomIn">Estas son las cualidades que se destacan en
+                            nuestros proyectos, diseñados con detalles estéticos, materiales nobles y una excelente
+                            técnica constructiva.</p>
+                        <p class="wow animate__animated animate__zoomIn">El equipo acompaña al cliente desde las ideas
+                            iniciales, hasta la materialización del espacio.</p>
+                        <!-- boton -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <a class="col col-md-6 btn py-3 px-5 mt-5 btn-mod wow animate__animated animate__zoomIn"
+                                    href="./pages/servicios.html" role="button">Conocer mas</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-12 col-lg-7 col-xl-6 mt-8">
+
+                        <!-- tarjeta concepto -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg1 centrar">
+                                <img src="./assets/img/iconos/concepto.png"
+                                    alt="icono representando de manera abstracta un concepto" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">CONCEPTO</h5>
+                                <p>Lineamientos y criterios de diseño. Según presupuesto y necesidades. Transformación
+                                    de
+                                    las
+                                    ideas en proyecto de arquitectura.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta proyecto -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg2 centrar">
+                                <img src="./assets/img/iconos/proyecto.png" alt="icono representando un plano"
+                                    class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">PROYECTO</h5>
+                                <p>Elaboración de documentación de obra. Obra nueva y remodelación. Documentación
+                                    completa
+                                    al
+                                    detalle.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta direccion -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg3 centrar">
+                                <img src="./assets/img/iconos/direccion.png"
+                                    alt="icono representando un hombre con casco" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">DIRECCION</h5>
+                                <p>Interpretación del proyecto ejecutivo y control de obra.</p>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta ejecucion -->
+                        <div class="tarjetaBox wow animate__animated animate__zoomIn">
+                            <div class="iconBox bg4 centrar">
+                                <img src="./assets/img/iconos/ejecucion.png"
+                                    alt="icono representando un muro de ladrillos" class="icono">
+                            </div>
+                            <div class="textBox">
+                                <h5 class="cardTittle">EJECUCION</h5>
+                                <p>Administración de obra. Nos encargamos de realizar la logistica y gestion de todos lo
+                                    recursos necesarios para ejecutar tus obras.</p>
+                            </div>
+                        </div>
+                        <!-- fin tarjetas -->
+                    </section>
+
+                    <!-- seccion 3 UBICACION y CONTACTO -->
+                    <!-- ubicacion -->
+                    <section class="col-lg-6 mt-8 wow animate__animated animate__fadeIn">
+                        <h3 class="pb-5">ubicacion</h3>
+                        <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                        <p>(603) 555-0123</p>
+                        <p>georgia.young@example.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13101.777421080134!2d-58.49726015!3d-34.819918650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652384779746!5m2!1ses-419!2sar"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+
+                    <!-- contacto -->
+                    <section class="col-lg-6 mt-8 wow animate__animated animate__fadeIn">
+                        <h3 id="contacto" class="pb-5">contacto</h3>
+                        <form action="">
+                            <label for="name">Nombre completo</label>
+                            <input id="name" type="text">
+                            <label for="mail">Correo electronico</label>
+                            <input id="mail" type="email">
+                            <label for="phone">Telefono</label>
+                            <input id="phone" type="text">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea type="text" id="mensaje"></textarea>
+                            <!-- boton -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <a class="col col-md-6 btn py-3 px-5 mt-5 btn-mod" href="#" role="button">Enviar
+                                        consulta</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
                 </div>
             </div>
             </div>
         </section>
 
-        <!-- contenedor grid -->
-        <section class="contenedor gridLayoutInicio">
-            <!-- seccion hacia quienes somos y que hacemos -->
-            <section class="justify-content-start verticalBox boxQuienesSomos wow animate__animated animate__zoomIn">
-                <h3>Nuestro trabajo</h3>
-                <p>Como estudio de arquitectura, realizamos proyectos y ejecución de obras de diferentes tipos y
-                    escalas.</p>
-                <p>Calidad, diseño y ubicación son nuestras premisas centrales para hacer arquitectura.</p>
-                <p>Estas son las cualidades que se destacan en nuestros proyectos, diseñados con detalles estéticos,
-                    materiales nobles y una excelente técnica constructiva.</p>
-                <p>El equipo acompaña al cliente desde las ideas iniciales, hasta la materialización del espacio.</p>
-                <div class="container-fluid">
-                    <div class="row"><a class="col col-md-6 btn btn-outline-dark btn-lg py-3 px-5 mt-5 btn-mod"
-                            href="./pages/servicios.html" role="button">Saber mas</a></div>
-                </div>
-            </section>
-            <section class="verticalBox boxQueHacemos">
-                <!-- tarjeta concepto -->
-                <div class="tarjetaBox wow animate__animated animate__zoomIn">
-                    <div class="iconBox bg1 centrar">
-                        <img src="./assets/img/iconos/concepto.png"
-                            alt="icono representando de manera abstracta un concepto" class="icono">
-                    </div>
-                    <div class="textBox">
-                        <h5 class="cardTittle">CONCEPTO</h5>
-                        <p>Lineamientos y criterios de diseño. Según presupuesto y necesidades. Transformación de las
-                            ideas en proyecto de arquitectura.</p>
-                    </div>
-                </div>
-                <!-- tarjeta proyecto -->
-                <div class="tarjetaBox wow animate__animated animate__zoomIn">
-                    <div class="iconBox bg2 centrar">
-                        <img src="./assets/img/iconos/proyecto.png" alt="icono representando un plano" class="icono">
-                    </div>
-                    <div class="textBox">
-                        <h5 class="cardTittle">PROYECTO</h5>
-                        <p>Elaboración de documentación de obra. Obra nueva y remodelación. Documentación completa al
-                            detalle.</p>
-                    </div>
-                </div>
-                <!-- tarjeta direccion -->
-                <div class="tarjetaBox  wow animate__animated animate__zoomIn">
-                    <div class="iconBox bg3 centrar">
-                        <img src="./assets/img/iconos/direccion.png" alt="icono representando un hombre con casco"
-                            class="icono">
-                    </div>
-                    <div class="textBox">
-                        <h5 class="cardTittle">DIRECCION</h5>
-                        <p>Interpretación del proyecto ejecutivo y control de obra.</p>
-                    </div>
-                </div>
-                <!-- tarjeta ejecucion -->
-                <div class="tarjetaBox  wow animate__animated animate__zoomIn">
-                    <div class="iconBox bg4 centrar">
-                        <img src="./assets/img/iconos/ejecucion.png" alt="icono representando un muro de ladrillos"
-                            class="icono">
-                    </div>
-                    <div class="textBox">
-                        <h5 class="cardTittle">EJECUCION</h5>
-                        <p>Administración de obra. Nos encargamos de realizar la logistica y gestion de todos lo
-                            recursos necesarios para ejecutar tus obras.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ubicacion -->
-            <section class="verticalBox boxUbicacion wow animate__animated animate__zoomIn">
-                <h3>ubicacion</h3>
-                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-                <p>(603) 555-0123</p>
-                <p>georgia.young@example.com</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13101.777421080134!2d-58.49726015!3d-34.819918650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652384779746!5m2!1ses-419!2sar"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-
-
-            <!-- contacto -->
-            <section class="verticalBox boxContacto wow animate__animated animate__zoomIn">
-                <h3 id="contacto">contacto</h3>
-                <form action="">
-                    <label for="name">Nombre completo</label>
-                    <input id="name" type="text">
-
-                    <label for="mail">Correo electronico</label>
-                    <input id="mail" type="email">
-
-                    <label for="phone">Telefono</label>
-                    <input id="phone" type="text">
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea type="text" id="mensaje"></textarea>
-
-                    <div class="container-fluid">
-                        <div class="row"><a class="col col-md-6 btn btn-outline-dark btn-lg py-3 px-5 mt-5 btn-mod"
-                                href="#" role="button">Enviar consulta</a></div>
-                    </div>
-                </form>
-            </section>
-
-        </section>
-        <!-- final del grid layout -->
     </main>
 
     <!-- INICIO DEL FOOTER -->
