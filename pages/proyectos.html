@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/iconos/favicon.png" type="image/x-icon">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+
+    <div id="arriba"></div>
+    <!-- header -->
+    <header>
+
+        <!-- HEADER BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg contenedor">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo logoAnimado" href="../index.html">
+                    <img src="../assets/img/iconos/favicon.png" alt="logo arqtech." width="30" height="24"
+                        class="d-inline-block align-text-middle">
+                    arqtech.
+                </a>
+                <!-- BOTON NAV MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- MENU DE LISTAS ACA ESTA EL PROBLEMA DE LA ALINEACION -->
+                <div class="collapse navbar-collapse flex-grow-0 flex-grow-mod" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link ps-5 letrasize" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-5 letrasize" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ps-5 letrasize" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-5 letrasize" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- FIN HEADER BOOTSTRP -->
+    </header>
+
+    <!-- main -->
+
+    <main>
+        <!-- hero carrousel -->
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- imagenes del carousel -->
+            <div class="carousel-inner">
+                <!-- slide #1 -->
+                <div class="carousel-item active height-mod">
+                    <img src="../assets/img/background/bgIndex.jpg" class="d-none d-sm-block w-100 img-filter"
+                        alt="imagen de un edificio de arquitectura arabiga">
+                    <img src="../assets/img/fotos/edificioRosa.jpg" class="d-block d-sm-none w-100 img-filter"
+                        alt="foto de un edificio rosa">
+                    <div class="carousel-caption text-start d-md-block row">
+                        <h2 class="col-lg-8 col-xl-6 my-4">Transformacion. dedicacion. realidad. arqtech.</h2>
+                        <p class="col-lg-8 col-xl-6 mb-5 txtWhite">Amet minim mollit non deserunt ullamco est sit aliqua
+                            dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+                <!-- slide #2 -->
+                <div class="carousel-item height-mod">
+                    <img src="../assets/img/background/bgProyectos.jpg" class="d-none d-sm-block w-100 img-filter"
+                        alt="fachadas de colores y ladrillo">
+                    <img src="../assets/img/fotos/edificioAmarillo.jpg" class="d-block d-sm-none w-100 img-filter"
+                        alt="edificio amarillo">
+                    <div class="carousel-caption text-start d-md-block">
+                        <h2 class="col-lg-8 col-xl-6 my-4">Quienes somos y que hacemos</h2>
+                        <p class="col-lg-8 col-xl-6 mb-5 txtWhite">En arqtech. somos un equipo interdisciplinar de
+                            diseño, comprometidos en la creación
+                            de arquitectura innovadora adaptada a cada usuario.</p>
+                    </div>
+                </div>
+                <!-- slide #3 -->
+                <div class="carousel-item height-mod">
+                    <img src="../assets/img/background/bgServicios.jpg" class="d-none d-sm-block w-100 img-filter"
+                        alt="foto de la esquina de un edificio">
+                    <img src="../assets/img/fotos/esquina.png" class="d-block d-sm-none w-100 img-filter"
+                        alt="imagen de la esquina de un edificio">
+                    <div class="carousel-caption text-start d-md-block">
+                        <h2 class="col-lg-8 col-xl-6 my-4">Proyectos y direccion de obra.</h2>
+                        <p class="col-lg-8 col-xl-6 mb-5 txtWhite">Trabajamos bajo el concepto de lograr una utilización
+                            óptima de
+                            nuestros recursos,
+                            para así poder maximizar la calidad de nuestros resultados.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- final imagenes del carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- GALERIA DE PROYECTOS -->
+        <div class="gridLayoutProyectos">
+            <section class="tittle">
+                <h3>Portfolio de proyectos</h3>
+                <p>Aportamos soluciones innovadoras, explotando cada material al maximo, creando asi, una variedad de
+                    alternativasa situaciones cotidianas</p>
+            </section>
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box1"
+                class="boxGaleria box1 boxGaleriaImg imgHorizontal wow animate__animated animate__fadeInLeft"><img
+                    src="../assets/img/fotos/casaDosPisos.jpg" alt="casa de dos plantas en forma de l"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/fotos/casaDosPisos.jpg"
+                                alt="foto de una casa de dos pisos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+
+            <div class="boxGaleria box2 centrar wow animate__animated animate__fadeInRight">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, culpa!</p>
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box3"
+                class="boxGaleria box3 boxGaleriaImg imgVertical wow animate__animated animate__fadeInLeft"><img
+                    src="../assets/img/fotos/casaModular.jpg" alt="Casa de dos plantas modular con patio"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/fotos/casaModular.jpg" alt="casa moderna">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+            <div class="boxGaleria box4 centrar">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, culpa!</p>
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box5"
+                class="boxGaleria box5 boxGaleriaImg imgVertical wow animate__animated animate__fadeInRight"><img
+                    src="../assets/img/fotos/interior.jpg" alt="Living a lado de una escalera de hierro y madera"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/fotos/interior.jpg" alt="interior de una casa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+            <div class="boxGaleria box6 centrar wow animate__animated animate__fadeInLeft">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, culpa!</p>
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box7"
+                class="boxGaleria box7 boxGaleriaImg imgHorizontal wow animate__animated animate__fadeInRight"><img
+                    src="../assets/img/fotos/casaTejas.jpg" alt="Casa de estilo clasico con techo de tejas"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/fotos/casaTejas.jpg" alt="casa con tejas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box8"
+                class="boxGaleria box8 boxGaleriaImg imgHorizontal wow animate__animated animate__fadeInLeft"><img
+                    src="../assets/img/background/bgServicios.jpg"
+                    alt="Imagen de la esquina de una casa con ladrillo a la vista"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/background/bgServicios.jpg"
+                                alt="esquina de una casa moderna">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#box9"
+                class="boxGaleria box9 boxGaleriaImg imgHorizontal wow animate__animated animate__fadeInRight"><img
+                    src="../assets/img/background/bgIndex.jpg" alt="Edificio con arquitectura arabe"></a>
+            <!-- Modal -->
+            <div class="modal fade" id="box9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-mod">
+                        <div class="modal-body">
+                            <img class="img-modal" src="../assets/img/background/bgIndex.jpg"
+                                alt="edificio de arquitectura arabiga">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Modal -->
+            <div class="boxGaleria box10 centrar wow animate__animated animate__fadeInRight">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, culpa!</p>
+            </div>
+
+            <!-- ubicacion -->
+            <section class="verticalBox boxUbicacion wow animate__animated animate__zoomIn">
+                <h3>ubicacion</h3>
+                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p>(603) 555-0123</p>
+                <p>georgia.young@example.com</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13101.777421080134!2d-58.49726015!3d-34.819918650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652384779746!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <!-- contacto -->
+            <section class="verticalBox boxContacto wow animate__animated animate__zoomIn">
+                <h3 id="contacto">contacto</h3>
+                <form action="">
+                    <label for="name">Nombre completo</label>
+                    <input id="name" type="text">
+                    <label for="mail">Correo electronico</label>
+                    <input id="mail" type="email">
+                    <label for="phone">Telefono</label>
+                    <input id="phone" type="text">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="text" id="mensaje"></textarea>
+                    <div class="container-fluid">
+                        <div class="row"><a class="col col-md-6 btn btn-outline-dark btn-lg py-3 px-5 mt-5 btn-mod"
+                                href="#" role="button">Enviar consulta</a></div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- INICIO DEL FOOTER -->
+    <footer class="bg1">
+        <section class="contenedor">
+            <h2 class="logo">arqtech.</h2>
+            <div class="menuSocial">
+                <a href="https://www.instagram.com"><img src="../assets/img/iconos/001-instagram.png"
+                        alt="ir a instagram"></a>
+                <a href="https://es-la.facebook.com"><img src="../assets/img/iconos/002-facebook.png"
+                        alt="ir a facebook"></a>
+                <a href="https://twitter.com"><img src="../assets/img/iconos/003-gorjeo.png" alt="ir a twitter"></a>
+            </div>
+            <p>Copyright © 2021 Sephora USA, Inc. All rights reserved</p>
+        </section>
+    </footer>
+    <!-- FINAL DEL FOOTER -->
+
+    <!-- boton para subir -->
+    <div class="irArriba"><a class="centrar" href="#arriba"><img src="../assets/img/iconos/flechaSubir.png"
+                alt="subir al inicio"></a></div>
+    <!-- fin boton parasubir -->
+
+    <!-- wow js -->
+    <script src="../js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
