@@ -631,6 +631,26 @@ footer .contenedor {
         text-align: center;
     }
 
+    .box1,
+    .box7,
+    .box8{
+        position: relative;
+    }
+
+
+    .box1:before,
+    .box7:before,
+    .box8:before{
+        content: url("../assets/img/iconos/maximize.png");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* paddin 18px a los lados */
     .pm-18 {
         padding-left: 18px;
@@ -743,6 +763,26 @@ footer .contenedor {
     .box10 {
         padding: 1.5rem;
         text-align: center;
+    }
+
+    .box1,
+    .box7,
+    .box8{
+        position: relative;
+    }
+
+
+    .box1:before,
+    .box7:before,
+    .box8:before{
+        content: url("../assets/img/iconos/maximize.png");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /******************** BOOTSTRAP MOBILE ********************/
