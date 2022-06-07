@@ -449,6 +449,11 @@ footer .contenedor {
 
 .enlace:hover {
     border-color: #141414;
+    color:#141414
+}
+
+.enlace:active{
+    color: #575757;
 }
 
 .activo {
